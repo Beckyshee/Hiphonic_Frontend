@@ -4,6 +4,10 @@
   border-radius: 10px;
   flex-direction: column;
   //border: 2px solid red;
+  margin-left: 20px;
+  gap: 2rem;
+  height: 120%;
+  min-width: 20vw;
   .title {
     height: 25px;
     display: flex;
@@ -30,6 +34,7 @@
   .personal-info {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     .info {
       display: flex;
       //border: 1px solid black;

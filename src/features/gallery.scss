@@ -5,8 +5,10 @@
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
+  margin-left: 20px;
+  gap: 1rem;
   //overflow: scroll;
-  height: 40%;
+  height: 50%;
   //border: 2px solid black;
   .photo {
     img {

@@ -4,8 +4,9 @@
   height: 215px;
   display: flex;
   justify-content: flex-end;
-  border-radius: 10px;
+  // border-radius: 10px;
   // position: relative;
+  margin-right: 20px;
   .form-container {
     // position: relative;
     // top: -90%;
@@ -16,8 +17,10 @@
     padding: 20px;
     border: 1px solid #ccc;
     z-index: 10;
+   
+    
   }
-  // margin-right: 10px;
+ 
   @media screen and (max-width: 425px) {
     margin-right: 10px;
     //margin-left: 5px;
