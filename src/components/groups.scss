@@ -1,0 +1,36 @@
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      font-size: 15px;
+      color: gray;
+    }
+    span {
+      font-size: 12px;
+      color: blue;
+    }
+  }
+  .group-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .group {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      img {
+        height: 30px;
+      }
+      p {
+        font-weight: bold;
+        font-size: 15px;
+      }
+    }
+  }
+}
