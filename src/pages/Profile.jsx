@@ -5,10 +5,13 @@ import NewPost from "../components/NewPost";
 //import Post from "../features/Post";
 import Gallery from "../features/Gallery";
 import UserPostList from "../features/posts/UserPostList";
+import { useNavigate } from "react-router-dom";
 
 // import { useEffect, useState } from "react";
 
-const Main = () => {
+const Main = () =>
+{
+  const navigate = useNavigate()
   // const token = localStorage.getItem("token");
   // console.log("token is ", token);
   // const [auth, setAuth] = useState(false);
@@ -20,6 +23,11 @@ const Main = () => {
   // }, [token]);
 
   // console.log(auth);
+  const handleClick = ( e ) =>
+  { 
+    e.preventDefault();
+   navigate("/photos");
+   }
   return (
     <>
       {/* {!auth ? (
@@ -31,7 +39,7 @@ const Main = () => {
           <Intro />
           <div className="buttons">
             <h4>Photos</h4>
-            <p>See all</p>
+            <p onClick={handleClick}>See all</p>
           </div>
           <div className="photo-wrapper">
             <Gallery />

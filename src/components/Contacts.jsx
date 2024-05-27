@@ -4,8 +4,13 @@ import esther from "../assets/esther.png";
 import cameron from "../assets/cameron.png";
 import brooklyn from "../assets/Brooklyn.png";
 import "./contacts.scss";
+import { useNavigate } from "react-router-dom";
 
-const Contacts = () => {
+const Contacts = () =>
+{
+  const navigate = useNavigate();
+
+
   const contacts = [
     {
       name: "Wade Warren",
@@ -28,11 +33,18 @@ const Contacts = () => {
       img: brooklyn,
     },
   ];
+
+  const handleClick = () =>
+  {
+    navigate("/friends")
+  }
+
+
   return (
     <div className="contacts">
       <div className="title">
         <h1>CONTACTS</h1>
-        <span>See all</span>
+        <span onClick={handleClick}>See all</span>
       </div>
       <div className="contact-list">
         {/* {console.log(contacts)} */}

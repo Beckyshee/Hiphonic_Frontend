@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import group1 from "../assets/Group1.png";
 import group2 from "../assets/Group2.png";
 import group3 from "../assets/Group3.png";
 import "./groups.scss";
 
-const Groups = () => {
+const Groups = () =>
+{
+  const navigate = useNavigate();
   const groups = [
     {
       name: "Design Enthusiast",
@@ -18,11 +21,17 @@ const Groups = () => {
       icon: group3,
     },
   ];
+
+  const handleClick = () =>
+  {
+    navigate("/groups")
+  }
+
   return (
     <div className="groups">
       <div className="title">
         <h2>GROUPS</h2>
-        <span>See all</span>
+        <span onClick={handleClick}>See all</span>
       </div>
       <div className="group-list">
         {groups &&
