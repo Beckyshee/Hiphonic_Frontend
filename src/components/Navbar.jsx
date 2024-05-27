@@ -54,7 +54,7 @@ const Navbar = () => {
   //   )
   // }
 
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [showLogout, setShowLogout] = useState(false);
 
 
@@ -62,30 +62,35 @@ const Navbar = () => {
     setShowNotification(!showNotification);
   };
 
-  const togglesidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+  // const togglesidebar = () => {
+  //   setIsSidebarOpen(!isSidebarOpen);
+  // };
 
   const toggleLogout = () => {
     setShowLogout(!showLogout);
   };
+  const handleClick = ( e ) =>
+  {
+    e.preventDefault();
+    navigate("/home");
+  }
 
   return (
     <div className="navbar">
-      <div className="logo">
-        <img className="menu1" src={menu} alt="no menu" />
+      <div className="logo" onClick={handleClick}>
+        {/* <img className="menu1" src={menu} alt="no menu" />
         <img
           onClick={togglesidebar}
           id="showMenu"
           className="menu"
           src={menu}
           alt="no menu"
-        />
+        /> */}
         <img src={logo} alt="no logo" />
         <h1>Hiphonic</h1>
       </div>
 
-      {isSidebarOpen && <Sidebar closeSidebar={togglesidebar} />}
+      {/* {isSidebarOpen && <Sidebar closeSidebar={togglesidebar} />} */}
 
       <div className="navbody">
         <div>
@@ -98,7 +103,7 @@ const Navbar = () => {
             {showNotification && <Notifications closeNote={handleClickNotif} />}
             {/* <div className="counter"></div> */}
           </span>
-         
+
           <img src={profilePic} alt="no-icon" className="profilePic" />
           <span onClick={toggleLogout}>
             <img src={chevron} alt="no-icon" />
