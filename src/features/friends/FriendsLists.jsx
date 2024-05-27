@@ -180,8 +180,12 @@ const FriendsList = () => {
         inaload ||
         (inaFetch && <ClipLoader color="#000" loading={true} size={150} />)}
       <div className="suggested-friends-title">
-        <span onClick={() => setFollowing(false)}>Suggested</span>
-        <span onClick={() => setFollowing(true)}>Following</span>
+        <span className="suggestions" onClick={() => setFollowing(false)}>
+          Suggested
+        </span>
+        <span className="suggestions" onClick={() => setFollowing(true)}>
+          Following
+        </span>
       </div>
       <section
         className="user-container"
