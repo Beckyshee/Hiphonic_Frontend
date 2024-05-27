@@ -23,9 +23,9 @@ const UserPostList = () => {
   if (isLoading || isFetching) {
     return <ClipLoader color="#000" loading={true} size={150} />;
   }
-  if (isError || error) {
-    return <div>Error: {error}</div>;
-  }
+  // if (isError || error) {
+  //   return <div>Error: {error}</div>;//issue may be here as well
+  // }
   return (
     <div className="postsList">
       <section className="posts-container">
