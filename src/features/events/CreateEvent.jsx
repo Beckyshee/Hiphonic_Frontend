@@ -25,7 +25,7 @@ const CreateEvent = ({ setShowForm }) => {
   return (
     <section className="create-event">
       <ToasterContainer />
-      <h2>Add a New Post</h2>
+      <h2>Add Event</h2>
       <form onSubmit={handleSubmit} className="form">
         <label className="form-input" htmlFor="EventName">
           Event Name:

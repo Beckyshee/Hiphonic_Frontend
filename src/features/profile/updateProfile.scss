@@ -1,47 +1,94 @@
+// updateProfile.scss
+
 .form-container {
-  //height: 500px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100vh;
+  height: 80vh;
   width: 50%;
-  width: 100vw;
   display: flex;
-  //position: relative;
-  //top: -600px;
-  z-index: 100;
   flex-direction: column;
   align-items: center;
-  background-color: black;
-  opacity: 90%;
+  z-index: 100;
+  
+  // opacity: 90%;
   color: white;
+
   .modal {
-    width: 40%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    //gap: 2%;
     border-radius: 10px;
-    //background-image: url("../../assets/HeaderImg.jpg");
-    opacity: 100%;
+    background-color: #D3D3D3;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      margin: 20px 0;
+    }
+
     form {
-      //border: 2px solid red;
-      height: 70%;
-      width: 25%;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      label {
+      align-items: center;
+      gap: 20px;
+
+      .form-input {
+        width: 80%;
         display: flex;
         flex-direction: column;
+        font-weight: bold;
+        color: #333;
 
-        input {
-          display: flex;
-          align-items: center;
-          color: black;
-          height: 20px;
+        label {
+          margin-bottom: 5px;
+        }
+
+        // input {
+        //   padding: 10px;
+        //   border-radius: 5px;
+        //   border: 1px solid #ccc;
+        //   color: #333;
+        //   font-size: 16px;
+        //   background-color: #f9f9f9;
+        //   transition: border-color 0.3s ease;
+
+        //   &:focus {
+        //     border-color: #007bff;
+        //     outline: none;
+        //   }
+        // }
+      }
+
+      button {
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:first-of-type {
+          background-color: #007bff;
+          color: #fff;
+
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+
+        &:last-of-type {
+          background-color: #6c757d;
+          color: #fff;
+
+          &:hover {
+            background-color: #5a6268;
+          }
         }
       }
     }

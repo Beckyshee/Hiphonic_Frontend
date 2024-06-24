@@ -67,7 +67,7 @@ const UpdateProfile = ({ onClose, user }) => {
               id="Email"
               name="Email"
               value={editedProfile.Email}
-              onChange={handleChange}
+              // onChange={handleChange}
             />
           </label>
           <label className="form-input" htmlFor="TagName">
@@ -110,10 +110,12 @@ const UpdateProfile = ({ onClose, user }) => {
               onChange={handleChange}
             />
           </label>
-          <button type="submit">
-            {isLoading ? "Loading" : "Save Profile"}
-          </button>
-          <button onClick={onClose}>Close Modal</button>
+         
+            <button type="submit">
+              {isLoading ? "Loading" : "Save Profile"}
+            </button>
+            <button onClick={onClose}>Close Modal</button>
+         
         </form>
       </div>
     </section>

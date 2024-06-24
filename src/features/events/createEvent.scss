@@ -1,14 +1,14 @@
 .create-event {
   display: flex;
   flex-direction: column;
-
+justify-content: center;
   align-items: center;
-
+margin-left: 100px;
   position: fixed;
-  width: 100%;
+  width: 80%;
   top: 20%;
   z-index: 1;
-  background-color: rgb(128, 86, 86);
+  background-color: #D3D3D3;
   opacity: 80%;
   form {
     display: flex;
@@ -18,7 +18,12 @@
     .form-input {
       display: flex;
       flex-direction: column;
-      color: white;
+      color: black;
     }
+  button{
+    background-color: rgb(5, 108, 254);
+    color: white;
+    font-style: bold;
+  }
   }
 }
